@@ -5,6 +5,7 @@
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -webkit-tap-highlight-color:transparent;
+    touch-action: manipulation;
 
 }
 
@@ -24,6 +25,7 @@ body
     background-repeat:no-repeat;
     background-size:128px 128px;
 
+
 }
 body {
     margin:0px;
@@ -35,6 +37,7 @@ body {
     width:100vw;
     height:100vh;
     overflow:hidden;
+
     padding:0px;
     margin:0px;
     /*background-size:  ;*/
@@ -53,6 +56,10 @@ body {
     user-select: none;
 
 }
+/*html,body {*/
+    /*position: fixed;*/
+    /*overflow: hidden;*/
+/*}*/
 .bandura.screen {
     padding:0px;
     display:block;
@@ -155,7 +162,7 @@ body {
     -webkit-animation-name: thumb;
     -webkit-animation-duration: 200ms;
 
-    -webkit-animation-iteration-count: 4;
+    -webkit-animation-iteration-count: 8;
     -webkit-animation-timing-function: ease;
 
     -moz-animation-name: thumb;
