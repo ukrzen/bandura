@@ -109,7 +109,7 @@ body {
 .line
 {
     /*transform: rotate(0.9deg);*/
-    box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+    box-shadow:3px 2px 4px rgba(0,0,0,0.4);
     /*-webkit-transform-origin: top  left;*/
 
     /*-ms-transform-origin: top  left;*/
@@ -128,7 +128,7 @@ body {
 
     position: absolute;
     /*border:!**! 3px solid transparent;*/
-    background-image:url(s.png);
+    background-image:url(silver_string.png);
 
     background-size:100%;
     /*border-left: 4px transparent solid;*/
@@ -322,6 +322,9 @@ footer
     {
         display:none;
     }
+    .info {
+        display:none;
+    }
 
 }
 .twitter-follow-button
@@ -341,6 +344,28 @@ footer
     height:           14px;
     background-size: 100% 100%;
 }
+.info {
+    position:fixed;
+    top: 20px;
+    right:20px;
+    width: 48px;
+    height:48px;
+    opacity:0.4;
+    background: url(info.png) no-repeat center center;
+    transition: opacity 1s ease;
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+.info:hover {
+    opacity: 0.9;
+}
+.screen a {
+    color:white;
+}
+.screen a:hover {
+    color:white;
+}
 .screen:not(.ready)
 {
     opacity:0;
@@ -353,6 +378,27 @@ footer
 .hidden
 {
     display:none !important;
+}
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    background-image: url('loader.gif');
+    background-size: 100% 100%;
+    top: 50%;
+    left: 50%;
+    width: 128px;
+    height: 128px;
+    margin-top: -64px;
+    margin-left: -65px;
+
+
+
+    animation: spinner 2s linear infinite;
 }
 .button
 {

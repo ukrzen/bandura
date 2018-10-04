@@ -32,16 +32,22 @@
     <script src="assets/howler.js"></script>
     <!--<script src="assets/touch.shim.js"></script>-->
 
-    <script src="assets/script.min.js?v=2"></script>
+    <script src="assets/script.js?v=2"></script>
 
     <link href="favicon.ico" rel="shortcut icon" type="image/png"/>
     <link rel="icon" type="image/png" sizes="128x128" href="/assets/icon.png" />
 </head>
 <body>
+<!--<div class="spinner">-->
+
+<!--</div>-->
 <div class="body bandura screen ">
     <div class="container  not-ready ">
         <div class="content">
         </div>
+    </div>
+    <div class="info">
+
     </div>
     <footer>
         Ukrzen Team
@@ -113,16 +119,29 @@
         <strong>Жоден з методів не працює</strong>
         <p>
 
-            Спробуйте запустити хендпан на іншому пристрої або на ноутбуці.
+            Спробуйте запустити сайт на іншому пристрої або на ноутбуці.
 
         </p>
+    </div>
+</div>
+<div class="info screen hidden">
+    <div>
+        <h2>Старосвітська Бандура</h2>
+        <br>
+        <b>Ідея, розробка, дизайн, семплування:</b> Ukrzen Team<br>
+        <b>Запис та натхнення :</b> <a href="https://www.facebook.com/taras.sylenko" target="_blank">Анастасія Войтюк</a><br>
+        <b>Звуки бандури:</b> <a href="https://www.facebook.com/taras.sylenko" target="_blank">Тарас Силенко</a> <br>
+        <b>Фото бандури:</b> Julian Hayda<br>
+        За підтримки:<br>
+
+        <a href="http://lvivbandurfest.in.ua/" ><img src="assets/bandurfest.png" width="140" ></a>
     </div>
 </div>
 <div class="hello screen">
     <div>
         <h2>Старосвітська Бандура</h2>
-        На нашому сайті Ви можете пограти на бандурі.<br>
-        <strong>Як?</strong><br>
+        Тут Ви можете пограти на народній бандурі. Саме на цьому інструменті грали кобзарі<br>
+        <br>
         Просто <span class="desktop">клацайте</span> <span class="mobile">натискайте</span> по струнах.
 
         <span class="desktop">
@@ -136,13 +155,7 @@
 
     </div>
 </div>
-<!--<div class="info screen">-->
-    <!--<div>-->
-        <!--<h2>Старосвітська Бандура</h2>-->
-        <!--<br>-->
-        <!--<b>Запис бандури:</b>-->
-    <!--</div>-->
-<!--</div>-->
+
 
 </body>
 
@@ -168,7 +181,8 @@
 </script>
 
 <script type="text/javascript" src="//w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({
+<script type="text/javascript">
+typeof(stLight) !== 'undefined' && stLight.options({
     publisher: "464d90da-aa5d-4761-b8ef-21e1b0bbd8f3",
     doNotHash: false,
     doNotCopy: false,
