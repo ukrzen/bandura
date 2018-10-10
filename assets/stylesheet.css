@@ -357,7 +357,50 @@ footer
     cursor: pointer;
 
 }
-.info:hover {
+@keyframes blink {
+    50% {
+        opacity: 0.0;
+    }
+}
+@-webkit-keyframes blink {
+    50% {
+        opacity: 0.0;
+    }
+}
+.record.active,.play.active {
+    animation: blink 1s ease infinite;
+    -webkit-animation: blink 1s ease infinite;
+}
+.record {
+    position:fixed;
+    top: 20px;
+    right:80px;
+    width: 48px;
+    height:48px;
+    opacity:0.4;
+    background: url(record.png) no-repeat center center;
+    transition: opacity 1s ease;
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+.play {
+    position:fixed;
+    top: 20px;
+    right:140px;
+    width: 48px;
+    height:48px;
+    opacity:0.4;
+    background: url(play.png) no-repeat center center;
+    transition: opacity 1s ease;
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+.disabled {
+    opacity:0.2;
+}
+.info:hover,.record:hover, .play:not(.disabled):hover {
     opacity: 0.9;
 }
 .screen a {
