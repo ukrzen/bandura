@@ -323,6 +323,10 @@ footer
     {
         display:none;
     }
+
+}
+@media screen and (max-width: 320px){
+
     .info {
         display:none;
     }
