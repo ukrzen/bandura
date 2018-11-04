@@ -128,7 +128,7 @@ body {
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
     float:left;
-    cursor: pointer;
+
 
     position: absolute;
     /*border:!**! 3px solid transparent;*/
@@ -139,6 +139,7 @@ body {
     /*border-right: 4px transparent solid;*/
     transition: border 1s ease;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .line {
@@ -297,7 +298,7 @@ footer a
 
 footer
 {
-    width: 100%;
+
     color: white;
     position: fixed;
     bottom: 25px;
