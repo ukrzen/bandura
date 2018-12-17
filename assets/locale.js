@@ -7,13 +7,49 @@
                 return navigator.userLanguage || navigator.language || navigator.browserLanguage || 'en';
             }
         };
+        var hasUkraineLanguage = function() {
+            try {
+                if (navigator.languages && navigator.languages.length) {
+                    var languages =  navigator.languages;
+                    for(var i=0; i < languages.length; i++) {
+                        var locale = languages[i].split('-')[0];
+                        if(locale === 'uk') {
+                            return true
+                        }
+                    }
+                } else {
+                    return getNavigatorLanguage().split('-')[0] === 'uk';
+                }
+                return false
+            } catch(e){
+                return false;
+            }
+
+        };
         var locale = getNavigatorLanguage();
+
         if(locale) {
             var language = locale.split('-')[0];
             if(language) {
-                if(language === 'es' && location.pathname !=='/es') {
-                    location.pathname = '/es';
+
+                if(hasUkraineLanguage() ) {
+                    if(location.pathname !=='/') {
+                        location.pathname = '/';
+                    }
                 }
+                else {
+                    if(language === 'es' && location.pathname ==='/') {
+                        location.pathname = '/es';
+                        return;
+                    }
+                    if(location.pathname ==='/') {
+                        location.pathname = '/en';
+                        return;
+                    }
+                }
+
+
+
             }
         }
     } catch(e) {
