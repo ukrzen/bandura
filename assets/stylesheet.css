@@ -354,7 +354,7 @@ footer
 html {
     -webkit-text-size-adjust: none
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 220px){
 
     .info {
         display:none;
@@ -409,7 +409,7 @@ html {
     height:           14px;
     background-size: 100% 100%;
 }
-.info {
+.info:not(.screen) {
     position:fixed;
     top: 20px;
     right:20px;
@@ -465,7 +465,7 @@ html {
 .disabled {
     opacity:0.2;
 }
-.info:hover,.record:hover, .play:not(.disabled):hover {
+.info:not(.screen):hover,.record:hover, .play:not(.disabled):hover {
     opacity: 0.9;
 }
 .screen a {
