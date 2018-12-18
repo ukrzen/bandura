@@ -5,10 +5,22 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+
 <url>
   <loc>https://bandura.ukrzen.in.ua/</loc>
-  <lastmod>2018-11-07T21:03:07+00:00</lastmod>
+  <lastmod>2018-12-18T21:03:07+00:00</lastmod>
+  <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://bandura.ukrzen.in.ua/en"/>
+  <xhtml:link
+          rel="alternate"
+          hreflang="es"
+          href="https://bandura.ukrzen.in.ua/es"/>
+  <xhtml:link
+          rel="alternate"
+          hreflang="pt"
+          href="https://bandura.ukrzen.in.ua/pt"/>
 </url>
-
 
 </urlset>
