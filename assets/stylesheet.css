@@ -325,17 +325,26 @@ footer
     transition: all ease 0.5s;
     opacity:0.9;
 }
-@media screen and (max-width: 640px){
-    footer
-    {
-        display:none;
-    }
-    .s-b
+@media screen and (max-width: 940px){
+    .footer-main
     {
         display:none;
     }
 
+
 }
+@media screen and (max-width: 740px){
+    .s-b
+    {
+        display:none;
+    }
+    footer {
+        display:none;
+    }
+
+
+}
+
 .s-b a:hover {
     -webkit-filter: saturate(90%);
     opacity:0.9;
