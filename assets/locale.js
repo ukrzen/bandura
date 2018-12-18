@@ -42,6 +42,10 @@
                         location.pathname = '/es';
                         return;
                     }
+                    if(language === 'pt' && location.pathname ==='/') {
+                        location.pathname = '/pt';
+                        return;
+                    }
                     if(location.pathname ==='/') {
                         location.pathname = '/en';
                         return;
