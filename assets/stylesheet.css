@@ -82,10 +82,16 @@ body {
 
 }
 .bandura .container {
-    background:url('bg-croped.jpg') center no-repeat black ;
+
     width: 100vw;
     height: 798px;
     position: relative;
+}
+.no-webp .bandura .container {
+    background:url('bg-croped.jpg') center no-repeat black ;
+}
+.webp .bandura .container {
+    background:url('bg-croped.webp') center no-repeat black ;
 }
 
 
