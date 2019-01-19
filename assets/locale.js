@@ -1,4 +1,7 @@
 (function(){
+    if(location.hostname === 'translate.googleusercontent.com') {
+        return;
+    }
     try {
         var getNavigatorLanguage = function() {
             if (navigator.languages && navigator.languages.length) {
